@@ -1,0 +1,12 @@
+{
+  "name": "medflow-sample-web",
+  "version": "1.0.0",
+  "description": "Sample MedFlow doctor desk and patient check-in page (no dependencies)",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,16 @@
+# Run everything locally with:  docker compose up --build
+# Then open http://localhost:8080
+services:
+  api:
+    build: ./backend
+    environment:
+      PORT: "3000"
+    ports:
+      - "3000:3000" # direct access for testing, e.g. http://localhost:3000/health
+
+  web:
+    build: ./frontend
+    ports:
+      - "8081:80"
+    depends_on:
+      - api

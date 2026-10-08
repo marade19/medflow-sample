@@ -1,0 +1,16 @@
+{
+  "name": "medflow-sample-api",
+  "version": "1.0.0",
+  "description": "Sample MedFlow queue API (in-memory, metadata only)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

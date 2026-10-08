@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MedFlow Sample</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MedFlow <span>sample</span></h1>
+      <p id="build"></p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Patient check-in</h2>
+        <label>Department <select id="checkin-dept"></select></label>
+        <button id="checkin-btn">Get ticket</button>
+        <p id="checkin-result" class="result" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2>Doctor desk</h2>
+        <div class="row">
+          <label>Department <select id="desk-dept"></select></label>
+          <label>Room <input id="desk-room" value="Consultation Room 1" maxlength="40" /></label>
+        </div>
+        <button id="callnext-btn">Call next</button>
+        <p id="desk-result" class="result" aria-live="polite"></p>
+        <table>
+          <thead>
+            <tr><th>Ticket</th><th>Status</th><th>Room</th><th>Wait (min)</th></tr>
+          </thead>
+          <tbody id="queue"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
